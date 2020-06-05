@@ -1,5 +1,4 @@
 import sys, os
-# from examples._examples import EXAMPLE
 from examples.example01 import EXAMPLE01
 from utils.misc import getCommandParams 
 
@@ -12,4 +11,4 @@ if __name__=='__main__':
 
     # run the chosen example
   
-    EXAMPLE01(matrix_type)
+    if example_nr == 1: EXAMPLE01(matrix_type)
