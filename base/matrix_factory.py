@@ -1,6 +1,6 @@
 # Matrices factory
 
-from matrix import Matrix
+from base.matrix import Matrix
 
 
 class Laplace(Matrix):

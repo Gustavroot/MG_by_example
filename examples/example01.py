@@ -1,18 +1,12 @@
 import sys, os
+from base.matrix import Matrix
+from base.solvers_factory import Jacobi
+from utils.misc import createMatrix
+from examples.example_decorators import example_info
+from examples.example_decorators import timing
 
-# Local dir
-dir_path = os.path.dirname(os.path.realpath(__file__))
-dir_path += '/'
-# adding examples-related resources
-sys.path.append(dir_path + "../base/")
-from matrix import Matrix
-#from matrix import create
-from solvers_factory import Jacobi
-# adding examples-related resources
-sys.path.append(dir_path + "../utils/")
-from misc import createMatrix
-
-
+@example_info(1)
+@timing
 def EXAMPLE01(matrix_type):
 
     print("\nUSING JACOBI\n")

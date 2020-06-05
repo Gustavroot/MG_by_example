@@ -1,11 +1,5 @@
 import sys, getopt, os
-
-# Local dir
-dir_path = os.path.dirname(os.path.realpath(__file__))
-dir_path += '/'
-# adding examples-related resources
-sys.path.append(dir_path + "../base/")
-from matrix_factory import Laplace
+from base.matrix_factory import Laplace
 
 
 # Get params from command line
