@@ -1,7 +1,7 @@
 from example01 import EXAMPLE01
 
 
-def EXAMPLE(example_nr):
+def EXAMPLE(example_nr, matrix_type):
 
     avail_examples = [1]
 
@@ -12,6 +12,6 @@ def EXAMPLE(example_nr):
     print("\nRunning example number "+str(example_nr)+"...")
 
     if example_nr==1:
-        EXAMPLE01()
+        EXAMPLE01(matrix_type)
 
     print("... done\n")
