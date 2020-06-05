@@ -1,6 +1,6 @@
 # Solvers factory
 
-from solver import Solver
+from base.solver import Solver
 
 
 class Jacobi(Solver):
